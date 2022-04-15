@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dye Khadijah | Siti Khadijah Online</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+  <header>
+
+    <div class="header-1">
+      <a id="alternating" href="#">free shipping on orders over rm60 within malaysia.</a>
+    </div>
+
+    <div class="header-2">
+      <a href="#" class="header-2hidden"><span>region: </span>malaysia (MYR)</a>
+      <a href="index.html"><img src="images/logo.jpg" alt=""></a>
+      <nav class="icons">
+        <a href="#" class="fas fa-search" onclick="openSearch()"></a>
+        <a href="login-register.html" class="fas fa-user-alt profile"></a>
+        <a href="shoppingcart.html" class="fas fa-shopping-bag"></a>
+      </nav>
+
+    </div>
+
+    <div class="header-3">
+      <div class="navbar">
+        <a href="shop.html">shop</a>
+        <a href="guide-me.html">guide me</a>
+        <a href="aboutUs.html">our story</a>
+      </div>
+    </div>
+
+    <div id="mylayout" class="layout">
+      <span class="layoutclosebtn" onclick="closeSearch()" title="Close layout">×</span>
+      <div class="layout-content">
+        <form action="http://nicesnippets.com" target="_blank">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search button-fullscreen"></i></button>
+        </form>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="small-container single-product">
+    <div class="row-details">
+
+      <div class="col-2">
+        <img src="images/diamond-inkstain-yellow1.jpeg" alt="" id="ProductImg">
+        <div class="small-img-row">
+          <div class="small-img-col">
+            <img src="images/diamond-inkstain-yellow1.jpeg" alt="" class="small-img">
+          </div>
+          <div class="small-img-col">
+            <img src="images/diamond-inkstain-yellow2.jpeg" alt="" class="small-img">
+          </div>
+          <div class="small-img-col">
+            <img src="images/diamond-inkstain-yellow.jpeg" alt="" class="small-img">
+          </div>
+          <div class="small-img-col">
+            <img src="images/neqah-shawl-peach-4.jpeg" alt="" class="small-img">
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="col-2">
+        <div class="col-2-title">
+          <img src="images/label-maroon.png" alt="" class="label-productlist">
+          <div>
+            <h1>TO DYE FOR BY KHADIJAH DIAMOND IN YELLOW WASH</h1>
+            <h4>RM 159.00</h4>
+          </div>
+        </div>
+        <div class="sec-1-productlist">
+          <select>
+            <option>Choose an option</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <br>
+          <input type="number" value="1" min="1">
+          <button type="button" name="button">ADD TO CART</button>
+        </div>
+
+
+        <h3>DESCRIPTION</h3>
+        <p>
+          Made from Lush Satin material, each scarf features Khadijah's signature ‘K’ logo in diamante and comes in its own specially designed box. With options in Plain and Diamond, the square scarf is available in 8 beautiful colours: Peach Splash, Pink Lime, Yellow Wash, Purple Cloud, Ink Stain, Cotton Candy, Citrus Fresh, and Bubble Gum.
+        </p>
+
+        <div class="faq-productdetails">
+          <div class="question-productdetails">
+          </div>
+          <div class="answer-productdetails open">
+
+          </div>
+        </div>
+
+        <div class="faq-productdetails">
+          <div class="question-productdetails">
+            <h3>SHIPPING & DELIVERY</h3>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="answer-productdetails">
+            <p>For more information, please refer our <a href="shipping-delivery.html">Shipping & Delivery page.</a></p>
+          </div>
+        </div>
+
+        <div class="faq-productdetails">
+          <div class="question-productdetails">
+            <h3>RETURN & EXCHANGE</h3>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="answer-productdetails">
+            <p>Registering with us helps speed up the ordering process for you, as we would already have your billing and shipping details. It also allows you to keep track of your current and past order, and payment status. However, you may still
+              checkout as a guest.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function() {
+      ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function() {
+      ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function() {
+      ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function() {
+      ProductImg.src = SmallImg[3].src;
+    }
+    const faqs = document.querySelectorAll(".faq-productdetails");
+
+    faqs.forEach((faq) => {
+      faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+      });
+    });
+  </script>
+
+  <script>
+
+  </script>
+
+
+  <section class="list">
+    <div>
+      <h6 style="text-transform: uppercase;">siti khadijah</h6>
+      <a href="aboutUs.html">
+        <p>about us</p>
+      </a>
+      <a href="guide-me.html">
+      <p>guide me</p>
+      </a>
+    </div>
+
+    <div>
+      <h6 style="text-transform: uppercase;">customer service</h6>
+      <a href="login-register.html">
+        <p>account</p>
+      </a>
+      <a href="contactUs.html">
+        <p>contact us</p>
+      </a>
+      <a href="faq.html">
+        <p>FAQs</p>
+      </a>
+      <a href="return-refund.html">
+        <p>return & refund</p>
+      </a>
+      <a href="https://www.ninjavan.co/en-my/tracking" target="_blank">
+        <p>Track Your Parcel</p>
+      </a>
+      <a href="terms-condition.html">
+        <p>terms & condition</p>
+      </a>
+      <a href="privacy-policy.html">
+        <p>privacy policy</p>
+      </a>
+
+    </div>
+
+    <div>
+      <h6 style="text-transform: uppercase;">quicklinks</h6>
+      <a href="https://linktr.ee/SKFoodPanda" target="_blank">
+        <p>sk foodpanda</p>
+      </a>
+      <a href="https://food.grab.com/my/en/restaurants?search=Siti%20Khadijah&pid=Website&c=MY20GFPDF2MEXDEEPLINK&is_retargeting=true&af_force_deeplink=true" target="_blank">
+        <p>sk grabmart</p>
+      </a>
+    </div>
+
+    <div class="icon-list">
+      <a href="https://www.facebook.com/TelekungSitiKhadijah" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://twitter.com/TelekungSK" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.youtube.com/user/sitikhadijahapparel" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/telekung.sitikhadijah/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <div class="copyright">
+    <p>Copyright 2021 Siti Khadijah Apparel Sdn. Bhd. (530728-H). All rights reserved.</p>
+  </div>
+
+
+  <script src="script.js"></script>
+
+
+</body>
+
+
+
+
+</html>

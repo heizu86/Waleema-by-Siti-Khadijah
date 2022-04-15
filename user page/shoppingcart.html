@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | Siti Khadijah Online</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+  <header>
+
+    <div class="header-1">
+      <a id="alternating" href="#">free shipping on orders over rm60 within malaysia.</a>
+    </div>
+
+    <div class="header-2">
+      <a href="#" class="header-2hidden"><span>region: </span>malaysia (MYR)</a>
+      <a href="index.html"><img src="images/logo.jpg" alt=""></a>
+      <nav class="icons">
+        <a href="#" class="fas fa-search" onclick="openSearch()"></a>
+        <a href="login-register.html" class="fas fa-user-alt profile"></a>
+        <a href="shoppingcart.html" class="fas fa-shopping-bag"></a>
+      </nav>
+
+    </div>
+
+    <div class="header-3">
+      <div class="navbar">
+        <a href="shop.html">shop</a>
+        <a href="guide-me.html">guide me</a>
+        <a href="aboutUs.html">our story</a>
+      </div>
+    </div>
+
+    <div id="mylayout" class="layout">
+      <span class="layoutclosebtn" onclick="closeSearch()" title="Close layout">×</span>
+      <div class="layout-content">
+        <form action="http://nicesnippets.com" target="_blank">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search button-fullscreen"></i></button>
+        </form>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="shoppingcart-section">
+    <div class="shoppingcart-container">
+      <div class="shoppingcart-divider">
+        <div class="shoppingcart-divider-section">
+          <i class="fas fa-shopping-bag"></i>
+          <span>1. CART</span>
+        </div>
+        <div class="shoppingcart-divider-section">
+          <i class="far fa-address-card" style="opacity:50%;"></i>
+          <span style="opacity:50%;">2. SHIPPING & PAYMENT</span>
+        </div>
+        <div class="shoppingcart-divider-section">
+          <i class="far fa-check-circle" style="opacity:50%;"></i>
+          <span style="opacity:50%;">3. DONE!</span>
+        </div>
+      </div>
+      <table class="table-shoppingcart">
+        <tr>
+          <th style="width:77px; height:39.5px;"></th>
+          <th style="width:168px; height:39.5px;"></th>
+          <th style="width:390px; height:39.5px; font-weight: 500;">PRODUCT</th>
+          <th style="width:136px; height:39.5px; font-weight: 500;">PRICE</th>
+          <th style="width:168px; height:39.5px; font-weight: 500;">QUANTITY</th>
+          <th style="font-weight: 500;">SUBTOTAL</th>
+        </tr>
+        <tr class="column-2-shoppingcart">
+          <td><i class="far fa-times-circle" style="font-size:26px; "></i></td>
+          <td><img src="images/neqah-shawl-blue-1.jpeg" alt="" style="height:119px; width:80px;"></td>
+          <td>Neqah Shawl Bridal In Light Blue</td>
+          <td>RM228.00</td>
+          <td><input type="number" value="1" min="1" style="font-size:14px; height:37px; width:51px; text-align:center;"></td>
+          <td>RM228.00</td>
+        </tr>
+        <tr class="column-2-shoppingcart">
+          <td><i class="far fa-times-circle" style="font-size:26px; "></i></td>
+          <td><img src="images/rise-cream1.jpeg" alt="" style="height:119px; width:80px;"></td>
+          <td>Rise By Khadijah Diamond In Cream</td>
+          <td>RM159.00</td>
+          <td><input type="number" value="1" min="1" style="font-size:14px; height:37px; width:51px; text-align:center;"></td>
+          <td>RM159.00</td>
+        </tr>
+      </table>
+      <div class="shoppingcart-cart">
+        <div class="shoppingcart-cart-left">
+          <h2>CART TOTALS</h2>
+          <table>
+            <tr>
+              <th>Subtotal</th>
+              <th>RM228.00</th>
+            </tr>
+            <tr>
+              <th>Subtotal</th>
+              <th>RM159.00</th>
+            </tr>
+          </table>
+          <hr>
+          <div style="display: flex; column-gap: 10px; margin-top:6px; margin-bottom:6px;">
+            <i class="fas fa-tags" style="font-size: 13.5px; margin-top:6px;"></i>
+            <p>Free shipping coupon</p>
+          </div>
+          <hr>
+          <table>
+            <tr>
+              <th>Total</th>
+              <th style="margin-left:28px;">RM387.00</th>
+            </tr>
+          </table>
+          <h2>HAVE A GIFT CARD?</h2>
+          <div class="shoppingcart-giftcard">
+            <input type="text" placeholder="Enter your code.." name="search" style="height:37px; width:280px; padding-left:10px;">
+            <button type="button" name="button" style="height:36px; width:73px; font-size:14px;">APPLY</button>
+          </div>
+          <a href="shoppingcart-shipping.html"><button type="button" name="button" style="font-size:19px; margin-top:20px;">PROCEED TO CHECKOUT</button></a>
+
+        </div>
+        <div>
+          <img src="images/gift-shoppingcart.jpeg" alt="" style="height:329px; width:329px;">
+          <p style="text-align:center;"><a href="productlist-neqah.html">Need some gifting ideas?</a></p>
+        </div>
+      </div>
+      <div class="icon-shoppingcart">
+        <div class="icon-shoppingcart-sec1">
+          <i class="fas fa-money-check-alt"></i>
+          <p>Fast & secured online banking payment.</p>
+        </div>
+        <div class="icon-shoppingcart-sec1">
+          <i class="fas fa-shipping-fast"></i>
+          <p>Fast shipment within 3 working days.</p>
+        </div>
+        <div class="icon-shoppingcart-sec1">
+          <i class="fas fa-user-tag"></i>
+          <p>30 days warranty, money back guarantee.</p>
+        </div>
+
+      </div>
+      <div style="text-align:center; margin-top:40px;">
+        <img src="images/payment-method.jpeg" alt="" style="width:888px;">
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="list">
+    <div>
+      <h6 style="text-transform: uppercase;">siti khadijah</h6>
+      <a href="aboutUs.html">
+        <p>about us</p>
+      </a>
+      <a href="guide-me.html">
+      <p>guide me</p>
+      </a>
+    </div>
+
+    <div>
+      <h6 style="text-transform: uppercase;">customer service</h6>
+      <a href="login-register.html">
+        <p>account</p>
+      </a>
+      <a href="contactUs.html">
+        <p>contact us</p>
+      </a>
+      <a href="faq.html">
+        <p>FAQs</p>
+      </a>
+      <a href="return-refund.html">
+        <p>return & refund</p>
+      </a>
+      <a href="https://www.ninjavan.co/en-my/tracking" target="_blank">
+        <p>Track Your Parcel</p>
+      </a>
+      <a href="terms-condition.html">
+        <p>terms & condition</p>
+      </a>
+      <a href="privacy-policy.html">
+        <p>privacy policy</p>
+      </a>
+
+    </div>
+
+    <div>
+      <h6 style="text-transform: uppercase;">quicklinks</h6>
+      <a href="https://linktr.ee/SKFoodPanda" target="_blank">
+        <p>sk foodpanda</p>
+      </a>
+      <a href="https://food.grab.com/my/en/restaurants?search=Siti%20Khadijah&pid=Website&c=MY20GFPDF2MEXDEEPLINK&is_retargeting=true&af_force_deeplink=true" target="_blank">
+        <p>sk grabmart</p>
+      </a>
+    </div>
+
+    <div class="icon-list">
+      <a href="https://www.facebook.com/TelekungSitiKhadijah" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://twitter.com/TelekungSK" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.youtube.com/user/sitikhadijahapparel" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/telekung.sitikhadijah/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+</body>
